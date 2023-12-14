@@ -60,9 +60,8 @@ export class AddDataComponent implements OnInit {
 
   onSubmit() {
     if (this.addChildForm.valid) {
-      console.log(this.currentPage);
+      alert('Child Successfully Registered');
       this.backendService.addChildData(this.addChildForm.value, this.currentPage);
     }
-    console.log(this.storeService.children);
   }
 }
