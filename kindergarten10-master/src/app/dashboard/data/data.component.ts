@@ -15,7 +15,7 @@ export class DataComponent implements OnInit {
   @Input() currentPage!: number;
   @Output() selectPageEvent = new EventEmitter<number>();
   public pageSizeOptions = [5, 10, 25, 100];
-  public pageSize = 10; // Set your default page size here
+  public pageSize = 10; 
 
   ngOnInit(): void {
     this.backendService.getChildren(this.currentPage);
