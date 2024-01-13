@@ -2,69 +2,99 @@
   "childs": [
     {
       "id": "_iL775j",
-      "name": "Nicole Fitsch 1",
+      "name": "Nicole Fitsch",
       "birthDate": "2021-07-04",
       "kindergardenId": 1
     },
     {
       "id": "_ij700m",
-      "name": "Melanie Hollunder 2",
+      "name": "Melanie Hollunder",
       "birthDate": "2020-07-04",
       "kindergardenId": 3
     },
     {
       "id": "_iL77oo",
-      "name": "Viktor Sachs 3",
+      "name": "Viktor Sachs",
       "birthDate": "2022-06-04",
       "kindergardenId": 4
     },
     {
       "id": "_iL790m",
-      "name": "Emily Nilson 4",
+      "name": "Emily Nilson",
       "birthDate": "2019-01-04",
       "kindergardenId": 2
     },
     {
       "id": "_iL790m",
-      "name": "Tom Reiner 5",
+      "name": "Tom Reiner",
       "birthDate": "2019-01-04",
       "kindergardenId": 2
     },
     {
       "id": "_iL790m",
-      "name": "Michael Mittner 6",
+      "name": "Michael Mittner",
       "birthDate": "2019-01-04",
       "kindergardenId": 2
     },
     {
       "id": "_iL790m",
-      "name": "Nikolaus Polarius 7",
+      "name": "Nikolaus Polarius",
       "birthDate": "2019-01-04",
       "kindergardenId": 2
     },
     {
-      "name": "Paulus Fensterl 8",
+      "name": "Paulus Fensterl",
       "kindergardenId": 2,
       "birthDate": "2023-09-28",
       "id": "9py_fwi"
     },
     {
-      "name": "Heidi aus den Bergen 9",
+      "name": "Heidi aus den Bergen",
       "kindergardenId": 2,
       "birthDate": "2023-10-05",
       "id": "hOHEFCv"
     },
     {
-      "name": "Traude Widmann 10",
-      "kindergardenId": 2,
-      "birthDate": "2023-10-05",
-      "id": "cu0_2Ad"
-    },
-    {
-      "name": "Heiner Kühlschrank 11",
+      "name": "Heiner Kühlschrank",
       "kindergardenId": 2,
       "birthDate": "2023-10-26",
       "id": "ip57WMS"
+    },
+    {
+      "name": "Kindi nummerzwei",
+      "kindergardenId": 4,
+      "birthDate": "2021-03-05",
+      "id": "urd8-Qp"
+    },
+    {
+      "name": "testig test",
+      "kindergardenId": 1,
+      "birthDate": "2021-09-02",
+      "id": "xbAwZBQ"
+    },
+    {
+      "name": "Kind nummereins",
+      "kindergardenId": 5,
+      "birthDate": "2022-01-06",
+      "id": "NovpBNH"
+    },
+    {
+      "name": "efnan evelioglu",
+      "kindergardenId": 4,
+      "birthDate": "2021-02-06",
+      "id": "-jnDJ7K"
+    },
+    {
+      "name": "Kind nummereins",
+      "kindergardenId": 1,
+      "birthDate": "2019-02-01",
+      "id": "Z3zQ3w2"
+    },
+    {
+      "name": "sami sami",
+      "kindergardenId": 4,
+      "birthDate": "2020-03-05",
+      "id": "n3Bu-9C"
     }
   ],
   "kindergardens": [
