@@ -2,6 +2,8 @@ import { Component, Input, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { BackendService } from 'src/app/shared/backend.service';
 import { StoreService } from 'src/app/shared/store.service';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogComponent } from 'src/app/shared/dialog'; 
 
 @Component({
   selector: 'app-add-data',
@@ -11,11 +13,14 @@ import { StoreService } from 'src/app/shared/store.service';
 export class AddDataComponent implements OnInit {
   public addChildForm!: FormGroup;
   @Input() currentPage!: number;
+  loading = false; 
+
 
   constructor(
     private formbuilder: FormBuilder,
     public storeService: StoreService,
-    public backendService: BackendService
+    public backendService: BackendService,
+    private dialog: MatDialog
   ) {}
 
   ngOnInit(): void {
@@ -60,8 +65,23 @@ export class AddDataComponent implements OnInit {
 
   onSubmit() {
     if (this.addChildForm.valid) {
-      alert('Child Successfully Registered');
-      this.backendService.addChildData(this.addChildForm.value, this.currentPage);
+      this.loading = true; // Set loading to true before making the backend call
+  
+      // Simulate an asynchronous operation, replace it with your actual backend call
+      setTimeout(() => {
+        this.loading = false; // Set loading to false when the operation is complete
+        const dialogRef = this.dialog.open(DialogComponent, {
+          width: '250px',
+          data: { title: 'Success', message: 'Child Successfully Registered' }
+        });
+  
+        dialogRef.afterClosed().subscribe(result => {
+          // Perform actions here if needed
+          if (!this.loading) {
+            this.backendService.addChildData(this.addChildForm.value, this.currentPage);
+          }
+        });
+      }, 2000); // Simulating a 2-second backend call, replace it with your actual backend call
     }
-  }
+  }  
 }
