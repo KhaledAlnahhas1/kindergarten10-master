@@ -31,5 +31,8 @@
     <div *ngIf="kindergardenError" style="color: red;">*Please choose a Kindergarten.</div>
   </div>
 
-  <button mat-raised-button type="submit" [disabled]="!addChildForm.valid" mat>Erfassen</button>
+  <button mat-raised-button type="submit" [disabled]="!addChildForm.valid">
+    <span *ngIf="!loading">Erfassen</span>
+    <mat-spinner *ngIf="loading" diameter="20" color="accent"></mat-spinner>
+  </button>
 </form>
