@@ -1,4 +1,4 @@
-import { Kindergarden } from "./Kindergarden";
+import { Kindergarten } from "./kindergarten";
 
 export interface Child {
     id: string;
@@ -11,6 +11,6 @@ export interface Child {
     id: string;
     name: string;
     birthDate: string,
-    kindergarden: Kindergarden,
+    kindergarden: Kindergarten,
     kindergardenId: number
   }

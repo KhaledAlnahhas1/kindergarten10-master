@@ -1,9 +1,11 @@
-export interface Kindergarden {
+// kindergarten.ts
+export interface Kindergarten {
     id: number;
     name: string;
     address: string;
     betreiber: string;
     typ: Typ,
+    photoFilePath: string;
   }
 
   export enum Typ {
