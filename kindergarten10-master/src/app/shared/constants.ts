@@ -1,1 +1,1 @@
-export const CHILDREN_PER_PAGE = 6;
+//export const CHILDREN_PER_PAGE = 6;
