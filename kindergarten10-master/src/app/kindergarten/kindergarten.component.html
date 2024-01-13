@@ -1,0 +1,14 @@
+<!-- kindergarten.component.html -->
+
+<div class="kindergarten-container" *ngFor="let kindergarden of kindergardens">
+  <h3>{{ kindergarden.name }}</h3>
+  <p>{{ kindergarden.address }}</p>
+  <p>{{ kindergarden.betreiber }}</p>
+  <p>{{ kindergarden.typ === Typ.privat ? 'Private' : 'Public' }}</p>
+  <img [src]="kindergarden.photoFilePath" alt="Kindergarten Photo">
+</div>
+
+<footer>
+  <p>Thank you for choosing our Kindergarten. We look forward to welcoming your child into our community!</p>
+  <p>© 2024 Khaled Alnahhas</p>
+</footer>
