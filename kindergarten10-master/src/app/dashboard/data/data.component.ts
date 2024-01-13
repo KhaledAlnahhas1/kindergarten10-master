@@ -1,7 +1,7 @@
+// data.component.ts
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { BackendService } from 'src/app/shared/backend.service';
-import { CHILDREN_PER_PAGE } from 'src/app/shared/constants';
-import { Typ } from 'src/app/shared/interfaces/Kindergarden';
+import { Typ } from 'src/app/shared/interfaces/kindergarten';
 import { StoreService } from 'src/app/shared/store.service';
 
 @Component({
@@ -14,7 +14,7 @@ export class DataComponent implements OnInit {
 
   @Input() currentPage!: number;
   @Output() selectPageEvent = new EventEmitter<number>();
-  public pageSizeOptions = [5, 10, 25, 100];
+  public pageSizeOptions = [10, 25, 100];
   public pageSize = 10; 
 
   ngOnInit(): void {
@@ -45,6 +45,7 @@ export class DataComponent implements OnInit {
 
   onPaginatorChange(event: any): void {
     this.currentPage = event.pageIndex + 1;
+    this.pageSize = event.pageSize; // Update the pageSize based on the paginator event
     this.selectPageEvent.emit(this.currentPage);
     this.backendService.getChildren(this.currentPage);
   }
