@@ -23,6 +23,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DialogComponent } from './shared/dialog';
 import { KindergartenComponent } from './kindergarten/kindergarten.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { KontaktPageComponent } from './kontakt-page/kontakt-page.component';
 
 
 @NgModule({
@@ -35,6 +37,8 @@ import { KindergartenComponent } from './kindergarten/kindergarten.component';
     ButtonComponent,
     DialogComponent,
     KindergartenComponent,
+    HomePageComponent,
+    KontaktPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,7 +58,8 @@ import { KindergartenComponent } from './kindergarten/kindergarten.component';
     MatSelectModule,
     MatProgressSpinnerModule,
     MatDialogModule,
-
+    MatSortModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
