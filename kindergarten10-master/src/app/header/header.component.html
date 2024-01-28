@@ -4,17 +4,26 @@
   
   <button mat-button [matMenuTriggerFor]="menu">Menu</button>
 <mat-menu #menu="matMenu">
+  <button mat-menu-item [routerLink]="['/homepage']">
+    <mat-icon>home</mat-icon>
+    <span>Homepage</span>
+  </button>
     <button mat-menu-item [routerLink]="['/dashboard']">
-      <mat-icon>dashboard</mat-icon>
-      <span>Dashboard</span>
+      <mat-icon>description</mat-icon>
+      <span>Anmeldung</span>
+    </button>
+    <button mat-menu-item [routerLink]="['/kindergarten']">
+      <mat-icon>school</mat-icon>
+      <span>Kindergärten </span>
+    </button>
+    <button mat-menu-item [routerLink]="['/kontaktpage']">
+      <mat-icon>contact_page</mat-icon>
+      <span>Kontakt </span>
     </button>
     <button mat-menu-item [routerLink]="['/about']">
       <mat-icon>info</mat-icon>
       <span>About</span>
     </button>
-    <button mat-menu-item [routerLink]="['/kindergarten']">
-      <mat-icon>kindergarten</mat-icon>
-      <span>Kindergärten</span>
-    </button>
+    
   </mat-menu>
 </div>
